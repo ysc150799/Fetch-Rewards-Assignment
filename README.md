@@ -12,3 +12,9 @@
 ## Step 3:
 - You are now ready to run the program.
 - Type `streamlit run fetchml.py` and the streamlit app should start running and you should see a browser window pop-up, if not copy the address from the terminal and paste in your browser.
+- After streamlit app is launched you will see a drop-down with many options you can select options to view that page
+- View data gives us data insights
+- Plot Data shows us EDA and plots on the data
+- Training Model trains the model and also shows us model parameters and the reason for selecting this model
+- Inference gives us csv about daily/monthly prediction between dates selected by a user
+- Visualize result gives us plots related to the result
