@@ -1,7 +1,7 @@
 # Fetch-Rewards-Assignment
 ## Step 1:
 - Clone this repository
-- Open terminal and run `https://github.com/damaniayash/fetch-takehome-ml.git`
+- Open terminal and run `git clone https://github.com/ysc150799/Fetch-Rewards-Assignment.git`
 - Once the repository has been cloned, cd/enter into this directory using `cd Fetch-Rewards-Assignment`
 
 ## Step 2:
