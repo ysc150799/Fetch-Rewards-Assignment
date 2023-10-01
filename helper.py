@@ -47,7 +47,6 @@ def plotRegressionLine(X_train, X_test, y_train, y_test, X, regressor):
     fig3 = px.line(pred, x='time',y='receipts').update_traces(line_color='black', line_width=5)
     fig = go.Figure(data = fig1.data + fig2.data + fig3.data).update_layout( # type: ignore
         xaxis_title="Time Step", yaxis_title="No of receipts")
-    #plt.plot(X, y_pred_line, color="black", linewidth=2, label="Prediction")
     return fig
 
 def plotCalculations(regressor,df):
@@ -72,7 +71,6 @@ def plotMonthlySum(regressor, df):
     fig2 = px.scatter(df22, x='time', y='receipts').update_traces(marker=dict(color='red'))
 
     fig = go.Figure(data = fig1.data + fig2.data) # type: ignore
-    #st.plotly_chart(fig, theme="streamlit", use_container_width=True)
     del df22['time']
     df22 = df22.style.background_gradient(axis=0)
     
