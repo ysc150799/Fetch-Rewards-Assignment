@@ -44,7 +44,7 @@ def plotRegressionLine(X_train, X_test, y_train, y_test, X, regressor):
     pred.columns = ['receipts', 'time']
     fig1 = px.scatter(train, x='time', y='receipts')
     fig2 = px.scatter(test, x='time', y='receipts').update_traces(marker=dict(color='orange'))
-    fig3 = px.line(pred, x='time',y='receipts').update_traces(line_color='black', line_width=5)
+    fig3 = px.line(pred, x='time',y='receipts').update_traces(line_color='red', line_width=5)
     fig = go.Figure(data = fig1.data + fig2.data + fig3.data).update_layout( # type: ignore
         xaxis_title="Time Step", yaxis_title="No of receipts")
     return fig
